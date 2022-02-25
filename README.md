@@ -5,5 +5,11 @@
    <a href="https://www.codefactor.io/repository/github/deusdrizzyy/example-bot">
       <img src="https://www.codefactor.io/repository/github/deusdrizzyy/example-bot/badge" alt="CodeFactor"/>
    </a>
-  <p align="center">Developed with ❤ by DeusDrizzyy.</p>
+   <a href="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/codeql-analysis.yml">
+      <img src="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL"/>
+   </a>
+   <a href="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/node.js.yml">
+      <img src="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/node.js.yml/badge.svg" alt="CodeQL"/>
+   </a>
+   <p align="center">Developed with ❤ by DeusDrizzyy.</p>
 </div>
