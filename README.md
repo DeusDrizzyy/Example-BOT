@@ -1,16 +1,30 @@
 <div align="center">
-<div>
-   <h3 align="center">Example BOT</h3>
-   <p align="center">Just a simple, outdated project (Discord.js v12) that can be used as a template.<br/>You can modify and use this code as you wish.</p><br/>
+   <h1>Example BOT</h1>
    <a href="https://www.codefactor.io/repository/github/deusdrizzyy/example-bot">
-      <img title="CodeFactor" alt="CodeFactor" src="https://www.codefactor.io/repository/github/deusdrizzyy/example-bot/badge"/>
-      <img title="Discord.js Version" alt="Discord.js" src="https://img.shields.io/github/package-json/dependency-version/DeusDrizzyy/Example-BOT/discord.js">
+      <img title="CodeFactor" alt="CodeFactor" src="https://www.codefactor.io/repository/github/deusdrizzyy/example-bot/badge" />
    </a>
    <a href="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/codeql-analysis.yml">
-      <img title="CodeQL" alt="CodeQL" src="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/codeql-analysis.yml/badge.svg"/>
+      <img title="CodeQL" alt="CodeQL" src="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/codeql-analysis.yml/badge.svg" />
    </a>
    <a href="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/node.js.yml">
-      <img title="CodeQL" alt="CodeQL" src="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/node.js.yml/badge.svg"/>
+      <img title="CodeQL" alt="CodeQL" src="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/node.js.yml/badge.svg" />
    </a>
-   <p align="center">Developed with ❤ by DeusDrizzyy.</p>
+   <a href="https://www.npmjs.com/package/discord.js/v/12.5.3">
+      <img title="Discord.js Version" alt="Discord.js" src="https://img.shields.io/github/package-json/dependency-version/DeusDrizzyy/Example-BOT/discord.js">
+   </a>
+   <br/>Just a simple Discord application project to use as a template.
+   <br/>You can modify and use this code as you wish.
+   <br/>
+   <h2>Installation</h2>
+   <p>After you have cloned the repository and extracted all the files, make sure you have NPM and Node.js 14x or later installed on your computer.
+      <br/>If you have everything ready, run the following command in the directory of the files.
+   </p><pre><code>npm install</code></pre>
+   <p>If there are no errors when installing the dependencies, go to the file "<b>/configs/config.js</b>" and do the configuration.
+      <br/>Once the settings are made, to initialize the application just use the following command:</p>
+   <pre><code>node index.js</code></pre>
+   <p>If the command list is loaded and the following message appears after that, the BOT is already working.</p>
+   <pre><code>The bot X has been successfully started. With X users, X channels and X servers.</code></pre>
+   <h2>Contributions</h2>
+   <p>Pull requests with clean, non-malicious code that aims to improve the code or add new features will be accepted.</p>
+   <h5>Developed with ❤ by DeusDrizzyy.</h5>
 </div>
