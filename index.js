@@ -3,7 +3,7 @@ const config = require('./configs/config');
 const messages = require('./configs/messages');
 const getFiles = require('./functions/getFiles');
 
-const bot = new Client({ /* ... */ });
+const bot = new Client({});
 
 bot.config = config;
 bot.commands = new Collection();
@@ -23,8 +23,6 @@ bot.on("message", message => {
     command && command.run(bot, message, args);
 });
 
-/* This is a public bot handler. */
-
 function getCommand(e, n) {
     n = n.slice(config.prefix.length);
     let t = e.commands.get(n);
@@ -38,7 +36,6 @@ function startBOT() {
     console.log(messages.bot.Connecting);
     bot.login(config.token);
 }
-
 
 function loadAllCommands(s) {
     for (const o of getFiles.searchFiles(s, "js")) {
