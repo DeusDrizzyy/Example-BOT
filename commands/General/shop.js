@@ -1,14 +1,11 @@
-const config = require("../../configs/config.js");
-const messages = require("../../configs/messages.js");
-const allowedChats = config.allowedChats;
+const { commands } = require("../../configs/messages.js");
 
 module.exports.run = (bot, message) => {
-    if (!allowedChats.some(chats => message.channel.id.includes(chats))) return message.channel.send(messages.commands.shop.wrongChat.replace('{user}', message.author));
-
-    return message.channel.send(messages.commands.shop.message.replace('{user}', message.author));
+    message.channel.send(commands.shop.message.replace('{user}', message.author));
 };
 
-module.exports.help = {
+module.exports.configs = {
     name: "shop",
-    aliases: ['store']
+    aliases: ['store'],
+    allowedChats: ['828436313656918047']
 };

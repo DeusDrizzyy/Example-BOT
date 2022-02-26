@@ -12,7 +12,7 @@ function searchFiles(s, e = "js") {
 	return o.length > 0 && t.push({
 		directory: s,
 		files: o
-	}), t;
+	}) && t;
 }
 
 module.exports.searchFiles = searchFiles;

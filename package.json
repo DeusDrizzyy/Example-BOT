@@ -1,6 +1,6 @@
 {
     "name": "example-bot",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Just an outdated project that can be used as a template.",
     "main": "index.js",
     "scripts": {
