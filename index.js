@@ -12,6 +12,12 @@ bot.on("ready", () => {
     console.log(`Developed by DeusDrizzyy#4763.`);
 });
 
+function getCommand(bot, name) {
+    name = name.slice(prefix.length);
+    let cmd = bot.commands.get(name);
+    return cmd || bot.commands.get(bot.aliases.get(name));
+}
+
 bot.on("message", async message => {
     if (message.author.bot || message.channel.type !== "text") return;
     if (!message.content.startsWith(prefix)) return;
@@ -26,20 +32,6 @@ bot.on("message", async message => {
     }
 });
 
-function getCommand(bot, name) {
-    name = name.slice(prefix.length);
-    let cmd = bot.commands.get(name);
-    return cmd || bot.commands.get(bot.aliases.get(name));
-}
-
-function startBOT() {
-    console.log(application.loadCmds);
-    loadAllCommands('./commands');
-
-    console.log(application.Connecting);
-    bot.login(token);
-}
-
 function loadAllCommands(s) {
     for (const o of searchFiles(s, "js")) {
         const s = o.directory.split("/");
@@ -53,6 +45,14 @@ function loadAllCommands(s) {
         const i = o.files.map(s => s.split("/").pop().split(".").shift());
         console.log(application.loadedCommands.replace("{amount}", o.files.length.toString()).replace("{category}", e ? e : application.noCmdCategory).replace("{allCmds}", i.join(", ")));
     }
+}
+
+function startBOT() {
+    console.log(application.loadCmds);
+    loadAllCommands('./commands');
+
+    console.log(application.Connecting);
+    bot.login(token);
 }
 
 startBOT();
