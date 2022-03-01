@@ -1,15 +1,15 @@
 const { Client, Collection } = require("discord.js");
-const { token, prefix } = require('./configs/config');
-const { application, commands } = require('./configs/messages');
-const { searchFiles } = require('./functions/getFiles');
+const { token, prefix } = require('./configs/config.js');
+const { application, commands } = require('./configs/messages.js');
+const { searchFiles } = require('./functions/getFiles.js');
 const bot = new Client({});
 
 bot.commands = new Collection();
 bot.aliases = new Collection();
 
 bot.on("ready", () => {
-    console.log(application.onlineBOT.replace('{botName}', bot.user.username).replace('{allBotUsers}', bot.users.cache.size.toString()).replace('{allBotChannels}', bot.channels.cache.size.toString()).replace('{allBotGuilds}', bot.guilds.cache.size.toString()));
-    console.log(`Developed by DeusDrizzyy#4763.`);
+    console.log(application.onlineBOT.replace('{name}', bot.user.username).replace('{users}', bot.users.cache.size.toString()).replace('{channels}', bot.channels.cache.size.toString()).replace('{guilds}', bot.guilds.cache.size.toString()));
+    console.log('Developed by DeusDrizzyy#4763.');
 });
 
 function getCommand(bot, name) {

@@ -11,7 +11,7 @@
    </a>
    <br/>
    <a href="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/node.js.yml">
-      <img title="CodeQL" alt="CodeQL" src="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/node.js.yml/badge.svg" />
+      <img title="Node.js CI" alt="Node.js CI" src="https://github.com/DeusDrizzyy/Example-BOT/actions/workflows/node.js.yml/badge.svg" />
    </a>
    <a href="https://www.npmjs.com/package/discord.js/v/12.5.3">
       <img title="Discord.js Version" alt="Discord.js" src="https://img.shields.io/github/package-json/dependency-version/DeusDrizzyy/Example-BOT/discord.js">
