@@ -8,12 +8,12 @@ module.exports = {
     application: {
         loadCmds: 'Loading commands...',
         Connecting: 'Connecting the BOT...',
-        /*
-		  List of Placeholders:
-		    • {amount} - Number of commands loaded into the category.
-		    • {category} - The name of the command category.
-		    • {allCmds} - The name of all the commands that have been loaded.
-        */
+        /**
+         *   List of Placeholders:
+         *     • {amount} - Number of commands loaded into the category.
+         *     • {category} - The name of the command category.
+         *     • {allCmds} - The name of all the commands that have been loaded.
+         */
         loadedCommands: 'Were loaded {amount} commands in category {category}. [{allCmds}]',
         // Message in the console if the application starts successfully.
         onlineBOT: 'The bot {name} has been successfully started. With {users} users, {channels} channels and {guilds} servers.',
@@ -32,12 +32,12 @@ module.exports = {
             embed: {
                 color: '#202225', // The color in HEX that will be used in the message. ( Default: #202225 )
                 title: ':white_small_square: Server Information:',
-                /*
-		          List of Placeholders:
-		            • {players} - Number of players online on the server.
-		            • {serverIP} - The IP address of the server. ( Configurable in config.js )
-		            • {status} - The current status of the server ( Online / Offline ).
-                */
+                /**
+                 *   List of Placeholders:
+                 *     • {players} - Number of players online on the server.
+                 *     • {serverIP} - The IP address of the server. ( Configurable in config.js )
+                 *     • {status} - The current status of the server ( Online / Offline ).
+                 */
                 description: 'We are currently with** {players} **players in our network.\n\n🔱 **IP:** {serverIP}\n⚜️ **Version:** 1.8x - 1.17x\n🔸 **Status:** {status}',
             },
         },
